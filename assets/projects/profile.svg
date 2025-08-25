@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0' stop-color='#7c3aed'/>
+      <stop offset='1' stop-color='#22d3ee'/>
+    </linearGradient>
+  </defs>
+  <rect width='640' height='640' fill='url(#g)'/>
+  <g fill='rgba(255,255,255,.85)'>
+    <circle cx='320' cy='240' r='100'/>
+    <path d='M120 520c32-96 120-156 200-156s168 60 200 156v40H120z'/>
+  </g>
+  <text x='50%' y='84%' text-anchor='middle' fill='white' font-family='Inter,Arial' font-size='28'>Sneha Gupta</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'>
+  <defs>
+    <radialGradient id='s' cx='0.2' cy='0.4' r='0.8'>
+      <stop offset='0' stop-color='#f59e0b'/>
+      <stop offset='1' stop-color='#7c3aed'/>
+    </radialGradient>
+  </defs>
+  <rect width='640' height='360' rx='24' fill='#0b0f17'/>
+  <circle cx='120' cy='180' r='50' fill='url(#s)'/>
+  <g fill='none' stroke='#22d3ee' opacity='0.6'>
+    <circle cx='120' cy='180' r='90'/>
+    <circle cx='120' cy='180' r='140'/>
+    <circle cx='120' cy='180' r='190'/>
+  </g>
+  <g fill='white'>
+    <circle cx='210' cy='180' r='8'/>
+    <circle cx='260' cy='220' r='10'/>
+    <circle cx='300' cy='120' r='6'/>
+  </g>
+  <text x='50%' y='88%' text-anchor='middle' fill='white' font-family='Inter,Arial' font-size='24'>3D Solar System (Three.js)</text>
+</svg>

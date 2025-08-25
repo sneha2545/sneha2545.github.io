@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sneha Gupta • Portfolio</title>
+  <meta name="description" content="Sneha Gupta – Aspiring Software Engineer & MERN Stack Developer. Turning ideas into scalable digital solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#" class="logo">Sneha Gupta</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </button>
+      <div class="palette" id="palette" aria-label="Select accent colors" role="group">
+        <button class="swatch" data-accent="violet-cyan" aria-label="Violet & Cyan"></button>
+        <button class="swatch" data-accent="blue-pink" aria-label="Blue & Pink"></button>
+        <button class="swatch" data-accent="emerald-amber" aria-label="Emerald & Amber"></button>
+        <button class="swatch" data-accent="rose-sky" aria-label="Rose & Sky"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero with 3D background -->
+  <section id="hero" class="hero">
+    <canvas id="bg"></canvas>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+    <div class="hero-content">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="hero-photo" aria-label="Profile photo">
+        <img src="sne1.jpg" alt="Sneha Gupta" width="180" height="180" loading="eager" decoding="async" />
+      </div>
+      <h1 class="typing gradient-text" aria-label="Sneha Gupta">Sneha Gupta</h1>
+      <h2><span id="role">Aspiring Software Engineer</span></h2>
+      <p class="tagline">“Turning ideas into scalable digital solutions.”</p>
+      <div class="cta">
+        <a class="btn primary" href="assets/Sneha_Gupta_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+      <div class="socials" aria-label="Social links">
+        <a class="icon-btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.98h5V24H0V8.98zM8.98 8.98h4.78v2.05h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 5.99 3.33 5.99 7.66V24h-5v-6.66c0-1.59-.03-3.63-2.21-3.63-2.21 0-2.55 1.73-2.55 3.52V24h-5V8.98z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/icons/github.svg" alt="GitHub" />
+        </a>
+        <a class="icon-btn" href="mailto:sneha@example.com" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-card glass">
+        <div class="frame3d">
+          <img src="sne2.jpg" alt="Sneha Gupta" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <h3>About Me</h3>
+          <p>Hi, I’m Sneha Gupta, I’m a Computer Science B.Tech student at Roorkee Institute of Technology with a passion for Full-Stack Web Development (MERN) and Problem Solving (DSA).I love building interactive, scalable applications and exploring areas like System Design, IoT, and 3D Web Projects. My goal is to grow into a software engineer who creates impactful solutions while constantly learning and innovating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h3>Skills</h3>
+      <div class="skills-cloud">
+        <!-- Icons are lightweight SVGs; replace or add as needed -->
+        <div class="skill" data-skill="HTML" title="HTML"> <img src="assets/icons/html.svg" alt="HTML"/> </div>
+        <div class="skill" data-skill="CSS" title="CSS"> <img src="assets/icons/css.svg" alt="CSS"/> </div>
+        <div class="skill" data-skill="JavaScript" title="JavaScript"> <img src="assets/icons/js.svg" alt="JavaScript"/> </div>
+        <div class="skill" data-skill="React" title="React"> <img src="assets/icons/react.svg" alt="React"/> </div>
+        <div class="skill" data-skill="Node.js" title="Node.js"> <img src="assets/icons/node.svg" alt="Node.js"/> </div>
+        <div class="skill" data-skill="MongoDB" title="MongoDB"> <img src="assets/icons/mongo.svg" alt="MongoDB"/> </div>
+        <div class="skill" data-skill="C" title="C"> <img src="assets/icons/c.svg" alt="C"/> </div>
+        <div class="skill" data-skill="C++" title="C++"> <img src="assets/icons/cpp.svg" alt="C++"/> </div>
+        <div class="skill" data-skill="Java" title="Java"> <img src="assets/icons/java.svg" alt="Java"/> </div>
+        <div class="skill" data-skill="Python" title="Python"> <img src="assets/icons/python.svg" alt="Python"/> </div>
+        <div class="skill" data-skill="GitHub" title="GitHub"> <img src="assets/icons/github.svg" alt="GitHub"/> </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Stats -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h3>Education</h3>
+      <div class="edu-card glass">
+        <div class="edu-left">
+          <div class="badge">B.Tech • CSE</div>
+          <h4>Roorkee Institute of Technology</h4>
+          <p>2022–2026 • Bachelor of Technology in Computer Science & Engineering</p>
+          <ul class="coursework">
+            <li>Data Structures & Algorithms</li>
+            <li>Object-Oriented Programming</li>
+            <li>DBMS & SQL</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Software Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h3>Experience</h3>
+      <div class="timeline" aria-label="Experience timeline">
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h4>NextaField — Full Stack Developer Intern</h4>
+            <p style="color: var(--muted); margin: 6px 0 10px;">Duration: <span>[July 2025 – September 2025]</span> • Location: <span>[Remote]</span></p>
+            <ul>
+              <li>Built and optimized a core module with React, Node.js, and MongoDB, improving performance and user experience.</li>
+              <li>Integrated REST APIs and resolved priority bugs, enhancing reliability and load time.</li>
+              <li>Collaborated in an Agile team, contributing to code reviews and version control with Git.</li>
+              <li><strong>Tech:</strong> [React, Node.js, MongoDB, REST APIs, Git]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / What I Do -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h3>What I Do</h3>
+      <div class="grid services-grid">
+        <div class="service glass">
+          <div class="icon">🧩</div>
+          <h4>Full‑Stack Web Apps</h4>
+          <p>Design and build scalable MERN stack applications with clean, modular architecture.</p>
+        </div>
+        <div class="service glass">
+          <div class="icon">⚡</div>
+          <h4>REST APIs & Auth</h4>
+          <p>High‑performance Node.js APIs with JWT/OAuth, rate limiting, and robust validation.</p>
+        </div>
+        <div class="service glass">
+          <div class="icon">🎨</div>
+          <h4>UI Engineering</h4>
+          <p>Responsive, accessible interfaces with nuanced micro‑interactions and animations.</p>
+        </div>
+        <div class="service glass">
+          <div class="icon">🛰️</div>
+          <h4>3D on the Web</h4>
+          <p>Interactive 3D/visual effects using Three.js for immersive, modern experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="grid">
+        <a class="project card3d" href="https://github.com/your-username/leaderboard-app" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/leaderboard.svg" alt="Leaderboard App cover" />
+              <div class="overlay"><h4>Leaderboard App (MERN)</h4></div>
+            </div>
+            <div class="card-back">
+              <p>MERN app with real-time ranks, search, and filters.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <!-- New projects injected -->
+        <a class="project card3d" href="https://github.com/sneha2545/Youtube-Clone" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/youtube-clone.svg" alt="YouTube Clone cover" />
+              <div class="overlay"><h4>YouTube Clone</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Video browsing UI with search, watch page, and responsive grid.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/Netflix-clone" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/netflix-clone.svg" alt="Netflix Clone cover" />
+              <div class="overlay"><h4>Netflix Clone</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Landing with horizontal carousels and hover previews.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/your-username/ayush-registration-portal" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/ayush-portal.svg" alt="Ayush Registration Portal cover" />
+              <div class="overlay"><h4>Ayush Registration Portal</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Secure user registration and form workflow with validations.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/To-do-list" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/todo-app.svg" alt="To‑Do List cover" />
+              <div class="overlay"><h4>To‑Do List</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Add/edit/delete tasks with localStorage persistence.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/calculator" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/calculator.svg" alt="Calculator cover" />
+              <div class="overlay"><h4>Calculator</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Clean calculator with keyboard support and history.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/WanderLust" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/airbnb-clone.svg" alt="Airbnb Clone cover" />
+              <div class="overlay"><h4>Airbnb Clone</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Browse listings, filters, and listing details UI.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/landing-page" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/landing-page.svg" alt="Landing Page cover" />
+              <div class="overlay"><h4>Landing Page</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Responsive hero, CTA, and marketing sections.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/your-username/portfolio-website" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/portfolio-cover.svg" alt="Portfolio Website cover" />
+              <div class="overlay"><h4>Portfolio Website</h4></div>
+            </div>
+            <div class="card-back">
+              <p>This animated 3D portfolio with GSAP and Three.js.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+        <a class="project card3d" href="https://github.com/sneha2545/3d-solar-system" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/solar-system.svg" alt="Solar System cover" />
+              <div class="overlay"><h4>3D Solar System (Three.js)</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Interactive orbits, camera controls, and labels.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project card3d" href="https://github.com/sneha2545/weather-app" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/weather-app.svg" alt="Weather App cover" />
+              <div class="overlay"><h4>Weather App</h4></div>
+            </div>
+            <div class="card-back">
+              <p>City search, current conditions, and 5‑day forecast.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Chat App -->
+        <a class="project card3d" href="https://github.com/sneha2545/chats" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/chat-app.svg" alt="Chat App cover" />
+              <div class="overlay"><h4>Chat App</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Real-time messaging with rooms, typing status, and seen receipts.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Quiz App -->
+        <a class="project card3d" href="https://github.com/sneha2545/quiz-app" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-front cover">
+              <img src="assets/projects/quiz-app.svg" alt="Quiz App cover" />
+              <div class="overlay"><h4>Quiz App</h4></div>
+            </div>
+            <div class="card-back">
+              <p>Timed quizzes, scoring, and category filters with results review.</p>
+              <span>View Repo/Demo</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Achievements -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <h3>Achievements & Certifications</h3>
+      <div class="timeline" aria-label="Achievements timeline">
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h4>Chanakya SMG Regional Finalist</h4>
+            <p>Recognized for strategic problem solving.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h4>Certifications</h4>
+            <ul>
+              <li>C – IIT Bombay Spoken Tutorial</li>
+              <li>Java – IIT Bombay Spoken Tutorial</li>
+              <li>Python – IIT Bombay Spoken Tutorial</li>
+              <li>MongoDB Atlas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <canvas id="bg2"></canvas>
+    <div class="container">
+      <h3>Contact</h3>
+      <form class="contact-form" autocomplete="on">
+        <div class="field">
+          <input type="text" id="name" required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+      <div class="links">
+  <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:sneha@example.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Sneha Gupta. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Scroll progress bar -->
+  <div id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Cursor glow -->
+  <div id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Back to Top -->
+  <button id="backTop" aria-label="Back to top">↑</button>
+
+  <!-- Vendor libs -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+  <!-- App scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
